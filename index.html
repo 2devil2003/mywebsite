@@ -4,7 +4,159 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mono Blog</title>
-  <link rel="stylesheet" href="style.css">
+   <style>
+   /* Basic styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #f8f8f8;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #666;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Hero section */
+.hero {
+  background-color: #f2f2f2;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #4caf50;
+  font-family: 'Raleway', serif;
+}
+
+.hero p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* Content section */
+.content {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.post {
+  width: calc(33.33% - 40px);
+  margin: 0 20px 20px 0;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.post img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.post h2 {
+  margin-bottom: 10px;
+  color: #4caf50;
+}
+
+.post p {
+  color: #666;
+}
+
+.post a {
+  text-decoration: none;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  /* Adjust header layout for smaller screens */
+  header nav {
+    flex-direction: column;
+  }
+
+  header nav a {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Adjust hero section text sizes for smaller screens */
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  /* Make content section stack posts on smaller screens */
+  .content {
+    flex-direction: column;
+  }
+
+  .post {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust post width for even smaller screens */
+  .post {
+    padding: 15px;
+  }
+}
+
+   </style>
 </head>
 <body>
   <header>
